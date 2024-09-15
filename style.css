@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /*overflow: hidden;*/
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.lightbox-caption {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.lightbox-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+
+.control-btn {
+  background: rgba(14, 13, 13, 0.6);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.control-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+#prev{
+  position: absolute;
+  left: 30px;
+  padding:10px ;
+  transform: translateY(-50%); 
+}
+#next{
+  position: absolute;
+  right: 30px;
+  transform: translateY(-50%); 
+}
+#zoom, #download{
+  position: absolute;
+  top: 20px;
+  pointer-events: auto;
+  padding: 10px;
+  user-select: none;
+}
+#zoom{
+  right: 120px;
+
+}
+#download{
+  right: 60px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+#download {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+}

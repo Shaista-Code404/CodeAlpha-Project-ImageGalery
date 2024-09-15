@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <body>
+    <div class="gallery-container">
+      <div class="gallery-grid">
+        <!-- Add more images as needed -->
+        <div class="gallery-item" data-src="images/img1.jpg" data-caption="Beautiful Sunset">
+            <img src="images/img1.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item" data-src="images/img2.jpg" data-caption="Mountain View">
+            <img src="images/img2.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item" data-src="images/img3.jpg" data-caption="Ocean Waves">
+            <img src="images/img3.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item" data-src="images/img4.jpg" data-caption="Forest Path">
+            <img src="images/img4.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item" data-src="images/img5.jpg" data-caption="Forest Path">
+          <img src="images/img5.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item" data-src="images/img6.jpg" data-caption="Beautiful Sunset">
+          <img src="images/img6.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item" data-src="images/img7.jpg" data-caption="Forest Path">
+         <img src="images/img7.jpg" alt="Image 6">
+        </div>
+        <div class="gallery-item" data-src="images/img8.jpg" data-caption="Forest Path">
+         <img src="images/img8.jpg" alt="Image 7">
+        </div>
+        <div class="gallery-item" data-src="images/img9.jpg" data-caption="Forest Path">
+         <img src="images/img9.jpg" alt="Image 8">
+        </div>
+        <div class="gallery-item" data-src="images/img19.jpg" data-caption="Beautiful View">
+          <img src="images/img19.jpg" alt="Image 9">
+        </div>
+        <div class="gallery-item" data-src="images/img10.jpg" data-caption="Forest Path">
+         <img src="images/img10.jpg" alt="Image 10">
+        </div>
+        <div class="gallery-item" data-src="images/img11.jpg" data-caption="Beautiful View">
+         <img src="images/img11.jpg" alt="Image 11">
+        </div>
+        <div class="gallery-item" data-src="images/img12.jpg" data-caption="Forest Path">
+          <img src="images/img12.jpg" alt="Image 12">
+        </div>
+        <div class="gallery-item" data-src="images/img13.jpg" data-caption="Forest Path">
+          <img src="images/img13.jpg" alt="Image 13">
+        </div>
+        <div class="gallery-item" data-src="images/img22.jpg" data-caption="Forest Path">
+          <img src="images/img22.jpg" alt="Image 22">
+        </div>
+        <div class="gallery-item" data-src="images/img15.jpg" data-caption="Beautiful Sunset">
+          <img src="images/img15.jpg" alt="Image 15">
+         </div>
+         <div class="gallery-item" data-src="images/img16.jpg" data-caption="Beautiful View">
+          <img src="images/img16.jpg" alt="Image 16">
+         </div>
+         <div class="gallery-item" data-src="images/img17.jpg" data-caption="Beautiful View">
+          <img src="images/img17.jpg" alt="Image 17">
+         </div>
+         <div class="gallery-item" data-src="images/img18.jpg" data-caption="Beautiful View">
+          <img src="images/img18.jpg" alt="Image 18">
+         </div>
+         <div class="gallery-item" data-src="images/img22.jpg" data-caption="Beautiful View">
+          <img src="images/img22.jpg" alt="Image 22">
+         </div>
+         <div class="gallery-item" data-src="images/img9.jpg" data-caption="Beautiful View">
+          <img src="images/img9.jpg" alt="Image 9">
+         </div>
+      </div>
+  </div>
+
+   <!-- Lightbox Modal -->
+   <div id="lightbox" class="lightbox">
+     <span id="close-lightbox" class="close">&times;</span>
+     <img id="lightbox-img" class="lightbox-img" src="" alt="Lightbox Image">
+     <div class="lightbox-caption" id="lightbox-caption"></div>
+        <span id="prev" class="control-btn"><i class="fa-solid fa-square-caret-right"></i></span>
+        <span id="next" class="control-btn"><i class="fa-solid fa-square-caret-left"></i></span>
+         <span id="zoom" class="control-btn" >&#128269;</span>
+         <a id="download" class="control-btn" download>
+            &#128190;
+         </a>
+        
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
